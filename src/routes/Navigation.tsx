@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Cliente, Home, Products } from "../pages";
 import { NavigationProps } from "../interfaces";
@@ -15,15 +16,21 @@ export const Navigation = ({children}: NavigationProps) => {
             <Route path="productos">
                 {
                     categories.map(category => (
-                        <Route key={category} path={`${category.toLowerCase()}`} element={<Products category={category} />}>
-                            {categoryFilter(category).map(product => (
-                                <Route key={product.id} path={`${product.link}`} element={<Product product={product} />} />
-                            ))}
-                        </Route>
+                        <React.Fragment key={category[1]}>
+                            <Route path={`${category[0].toLowerCase()}`} element={<Products category={category[0]} />} />
+                            <Route path={`${category[0].toLowerCase()}`}>
+                                {categoryFilter(category[0]).map(product => (
+                                   <Route key={product.id} path={`${product.link}`} element={<Product product={product} />} />
+                                ))}
+                            </Route>
+                        </React.Fragment>
                     ))
                 }
             </Route>
             <Route path="/*" element={<Navigate to="/" replace />} />
+            <Route path="test" element={<Home />}>
+                <Route path="nested" element={<Cliente />} />
+            </Route>
         </Routes>
     </BrowserRouter>
     )

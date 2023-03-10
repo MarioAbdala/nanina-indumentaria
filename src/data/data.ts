@@ -31,4 +31,6 @@ export const products: Product[] = [
     })
 ];
 
-export const categories: Category[] = ["Bombachas", "Corpiños", "Mallas", "Medias"];
+// export const categories: Category[] = ["Bombachas", "Corpiños", "Mallas", "Medias"];
+
+export const categories: Array<[Category, number]> = [["Bombachas", 1], ["Corpiños", 2], ["Mallas", 3], ["Medias", 4]];
