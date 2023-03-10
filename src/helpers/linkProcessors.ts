@@ -7,7 +7,7 @@ export const generateLink = (id: number): string => {
 type PreProduct = Omit<Product, "link">;
 
 export const generateProduct = ({ id, img, name, price, colors, isNew, category }: PreProduct):Product => {
-    const link = `/articulo-${id}`;
+    const link = `articulo-${id}`;
     return {
         id, img, name, price, colors, isNew, link, category
     };

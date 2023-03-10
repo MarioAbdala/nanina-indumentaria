@@ -18,7 +18,7 @@ export interface Product {
     name: string;
     img: string;
     price: number;
-    category: string;
+    category: Category;
     link: string;
     colors?: ProductColor[];
     isNew?: boolean;
@@ -46,10 +46,6 @@ export interface SectionProps {
     [x: string]: any;
 };
 
-export interface ProductosProps {
-    children: JSX.Element | JSX.Element[];
-};
-
 export interface ProductsDividerProps {
     title: string;
     subtitle?: string;
@@ -57,4 +53,14 @@ export interface ProductsDividerProps {
 
 export interface ProductsGridProps {
     products: Product[];
+};
+
+// Products components
+
+export interface ProductsPageProps {
+    category: Category;
+};
+
+export interface ProductPageProps {
+    product: Product;
 };

@@ -21,6 +21,6 @@ nav ul li a {
     font-size: 23px;
 }
 
-.nav-active {
+.nav-active, nav ul li a:hover {
     color: var(--main-purple) !important;
 }
