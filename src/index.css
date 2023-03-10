@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    --main-pink: #c70452;
+    --main-purple: #4b004c;
+    --secondary-pink: #e63c80;
+    --background-pink: #f0b9cf;
+    --background-purple: #e0d1ed;
+    --transparent-pink: #e63c8085;
+}

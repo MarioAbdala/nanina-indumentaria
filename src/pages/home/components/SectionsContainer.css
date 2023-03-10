@@ -1,0 +1,19 @@
+.section-container {
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block: 3rem;
+}
+
+.main-section {
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.secondary-section {
+    height: 48%;
+    margin-left: 1rem;
+}
