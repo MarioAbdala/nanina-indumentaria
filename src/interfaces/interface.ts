@@ -55,6 +55,10 @@ export interface ProductsGridProps {
     products: Product[];
 };
 
+export interface ProductProps {
+    product: Product;
+};
+
 // Products components
 
 export interface ProductsPageProps {

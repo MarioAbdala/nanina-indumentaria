@@ -28,9 +28,6 @@ export const Navigation = ({children}: NavigationProps) => {
                 }
             </Route>
             <Route path="/*" element={<Navigate to="/" replace />} />
-            <Route path="test" element={<Home />}>
-                <Route path="nested" element={<Cliente />} />
-            </Route>
         </Routes>
     </BrowserRouter>
     )
