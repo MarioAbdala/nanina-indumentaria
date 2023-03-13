@@ -1,4 +1,4 @@
-import { Category, Product, Section } from "../interfaces";
+import { Category, Color, Product, Section } from "../interfaces";
 import { generateProduct } from "../helpers";
 
 export const slides: string[] = ['https://lamasonerialenceria.com/media/wysiwyg/la-masoneria/banner2_1.jpg', 'https://lamasonerialenceria.com/media/wysiwyg/la-masoneria/banner3.jpg', 'https://lamasonerialenceria.com/media/wysiwyg/la-masoneria/bannerprincipal.jpg'];
@@ -31,6 +31,6 @@ export const products: Product[] = [
     })
 ];
 
-// export const categories: Category[] = ["Bombachas", "Corpiños", "Mallas", "Medias"];
+export const colors: Color[] = [{name: "Negro", hex: "#000000"}, {name: "Blanco", hex: "#FFFFFF"}, {name: "Avellana", hex: "#A08175"}, {name: "Gris", hex: "#6B6A6A"}, {name: "Verde", hex: "#7DB872"}];
 
 export const categories: Array<[Category, number]> = [["Bombachas", 1], ["Corpiños", 2], ["Mallas", 3], ["Medias", 4]];

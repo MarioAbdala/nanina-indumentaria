@@ -18,4 +18,5 @@
 
 .product-price {
     color: var(--secondary-pink);
+    margin-bottom: .25rem;
 }

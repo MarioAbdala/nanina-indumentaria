@@ -2,6 +2,11 @@
 
 export type Category = "Mallas" | "Corpiños" | "Bombachas" | "Medias";
 
+export interface Color {
+    name: string;
+    hex: string;
+}
+
 export interface Section {
     name: Category;
     img: string;
@@ -57,6 +62,14 @@ export interface ProductsGridProps {
 
 export interface ProductProps {
     product: Product;
+};
+
+export interface ColorsGridProps {
+    colors: Color[];
+};
+
+export interface ColorProps {
+    color: Color;
 };
 
 // Products components

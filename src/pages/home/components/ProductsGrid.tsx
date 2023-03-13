@@ -4,7 +4,7 @@ import './ProductsGrid.css';
 
 export const ProductsGrid = ({ products }: ProductsGridProps) => {
     return (
-    <div>
+    <div className="products-grid">
         {
             products.map(product => (
                 <Product key={product.name} product={product} />

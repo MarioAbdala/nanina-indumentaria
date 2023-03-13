@@ -1,0 +1,19 @@
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: .25rem;
+    border: 1px solid black;
+}
+
+.color:hover {
+    opacity: 0.8;
+}
+
+.color-text {
+    translate: 20px 20px;
+    border: 0.5px solid black;
+    width: fit-content;
+    padding-inline: 2.5px;
+    position: absolute;
+}

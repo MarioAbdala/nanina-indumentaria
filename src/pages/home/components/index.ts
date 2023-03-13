@@ -1,4 +1,6 @@
 export * from './Carousel';
+export * from './Color';
+export * from './ColorsGrid';
 export * from './Product';
 export * from './ProductsDivider';
 export * from './ProductsGrid';
