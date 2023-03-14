@@ -35,6 +35,13 @@ export interface MainLayoutProps {
     children: JSX.Element | JSX.Element[];
 };
 
+// Main components
+
+export interface FooterColumnProps {
+    title: string;
+    links: [string, string][];
+};
+
 // Home components
 
 export interface CarouselProps {

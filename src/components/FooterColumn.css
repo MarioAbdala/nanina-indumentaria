@@ -1,0 +1,16 @@
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column-title {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.footer-column-link {
+    margin-bottom: .5rem;
+    color: #6e6e6e;
+    text-decoration: none;
+}
