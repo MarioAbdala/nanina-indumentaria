@@ -1,5 +1,6 @@
+import { FooterColumn } from './';
+import { accesosLinks, infoLinks, links } from '../data';
 import './Footer.css';
-import { FooterColumn } from './FooterColumn';
 
 export const Footer = () => {
     return (
@@ -25,7 +26,9 @@ export const Footer = () => {
                 <a className="footer-logo-container" href="https://www.instagram.com/nanina_lenceria/"><img className="footer-logo" src="https://cdn.iconscout.com/icon/free/png-256/instagram-1464521-1239436.png" alt="instagram logo" /></a>
             </div>
         </div>
-        <FooterColumn title={"Categorías"} links={[["Corpiños","/productos/corpiños"], ["Bombachas", "/productos/bombachas"]]} />
+        <FooterColumn title={"Categorías"} links={links} />
+        <FooterColumn title={"Información"} links={infoLinks} />
+        <FooterColumn title={"Accesos rápidos"} links={accesosLinks} />
     </div>
     )
 };

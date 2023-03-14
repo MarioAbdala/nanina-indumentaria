@@ -14,3 +14,7 @@
     color: #6e6e6e;
     text-decoration: none;
 }
+
+.footer-column-link:hover {
+    color: var(--primary-purple);
+}

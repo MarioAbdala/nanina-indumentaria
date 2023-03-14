@@ -69,3 +69,9 @@ export const products: Product[] = [
 export const colors: Color[] = [{name: "Negro", hex: "#000000"}, {name: "Blanco", hex: "#FFFFFF"}, {name: "Avellana", hex: "#A08175"}, {name: "Gris", hex: "#6B6A6A"}, {name: "Verde", hex: "#7DB872"}];
 
 export const categories: Array<[Category, number]> = [["Bombachas", 1], ["Corpiños", 2], ["Mallas", 3], ["Medias", 4]];
+
+export const links: [string, string][] = [["Corpiños","/productos/corpiños"], ["Bombachas", "/productos/bombachas"], ["Mallas", "/productos/mallas"], ["Medias","/productos/medias"]];
+
+export const infoLinks: [string, string][] = [["Sobre nosotros","#"], ["Contactanos","#"], ["Términos y condiciones","#"], ["Cambios y devoluciones","#"]];
+
+export const accesosLinks: [string, string][] = [["Mi cuenta","#"], ["Locales","#"], ["Tabla de talles","#"], ["Preguntas frecuentes","#"]];
