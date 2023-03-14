@@ -1,8 +1,8 @@
-import { Section } from "./Section";
+import { Section } from "./";
 import { SectionContainerProps } from "../../../interfaces";
 import './SectionsContainer.css';
 
-export const SectionsContainer = ({ sections }:SectionContainerProps) => {
+export const SectionsContainer = ({ sections } : SectionContainerProps) => {
     return (
     <div className="section-container">
         {sections.map((section, index) => (

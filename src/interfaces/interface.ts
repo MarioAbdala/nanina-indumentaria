@@ -29,9 +29,9 @@ export interface Product {
     isNew?: boolean;
 };
 
-// Routes
+// Layout
 
-export interface NavigationProps {
+export interface MainLayoutProps {
     children: JSX.Element | JSX.Element[];
 };
 
@@ -43,7 +43,7 @@ export interface CarouselProps {
 };
 
 export interface SectionContainerProps {
-    sections: Section[];
+    sections: [Section, Section, Section];
 };
 
 export interface SectionProps {

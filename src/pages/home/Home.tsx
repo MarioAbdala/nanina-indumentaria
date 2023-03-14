@@ -1,8 +1,7 @@
-import { Carousel, ProductsDivider, SectionsContainer } from './components';
-import { slides, sections, products } from '../../data';
-import './Home.css';
-import { ProductsGrid } from './components/ProductsGrid';
+import { Carousel, ProductsDivider, SectionsContainer, ProductsGrid } from './components';
+import { slides, sections } from '../../data';
 import { categoryFilter } from '../../helpers';
+import './Home.css';
 
 export const Home = () => {
     

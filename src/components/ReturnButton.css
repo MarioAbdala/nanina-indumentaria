@@ -10,6 +10,7 @@
     height: 50px;
     cursor: pointer;
     border: 1px solid grey;
+    background-color: #ffffff;
 }
 
 .return-button:hover {

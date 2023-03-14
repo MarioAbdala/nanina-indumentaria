@@ -1,3 +1,12 @@
 .products-grid {
     margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.products-grid>.product {
+    margin-bottom: 2.5rem;
 }

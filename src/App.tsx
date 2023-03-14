@@ -1,12 +1,9 @@
-import { MainLayout } from "./layouts";
 import { Navigation } from "./routes";
 
 const App = () => {
     return (
     <>
-        <Navigation>
-          <MainLayout />
-        </Navigation>
+      <Navigation />
     </>
     )
 };
