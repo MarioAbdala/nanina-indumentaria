@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Cliente, Home, Products } from "../pages";
+import { Login, Home, Products } from "../pages";
 import { categoryFilter } from '../helpers';
 import { categories } from "../data";
 import { Product } from "../pages/productos/Product";
@@ -12,7 +12,7 @@ export const Navigation = () => {
         <MainLayout>
             <Routes>
                 <Route path="" element={<Home />} />
-                <Route path="cliente" element={<Cliente />} />
+                <Route path="cliente" element={<Login />} />
                 <Route path="productos">
                     {
                         categories.map(category => (
