@@ -25,6 +25,10 @@ export const Navbar = () => {
                     <NavLink to="/productos/medias" className={({isActive}) => isActive ? 'nav-active' : ''}>Conocenos</NavLink>
                 </li>
             </ul>
+            <div className="nav-icon-text-container">
+                <a href="#" className="nav-icon-text"><span className="material-icons">shopping_cart</span> Carrito</a>
+                <NavLink to="/cliente" className="nav-icon-text"><span className="material-icons">account_circle</span> Mi cuenta</NavLink>
+            </div>
         </nav>
     </>
     )

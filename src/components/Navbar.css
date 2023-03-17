@@ -65,18 +65,43 @@ nav {
 }
 
 nav ul {
-    width: 60%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    margin-left: auto;
+    margin-right: 5rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .nav-active, nav ul li a:hover {
     color: var(--main-purple) !important;
+}
+
+.nav-icon-text-container {
+    width: 16.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icon-text {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-icon-text:hover {
+    color: var(--main-purple);
+}
+
+.nav-icon-text>span {
+    margin-right: .25rem;
 }
