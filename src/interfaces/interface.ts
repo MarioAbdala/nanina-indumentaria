@@ -29,9 +29,13 @@ export interface Product {
     isNew?: boolean;
 };
 
-// Layout
+// Layouts
 
 export interface MainLayoutProps {
+    children: JSX.Element | JSX.Element[];
+};
+
+export interface ShopLayoutProps {
     children: JSX.Element | JSX.Element[];
 };
 

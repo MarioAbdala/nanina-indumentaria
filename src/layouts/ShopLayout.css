@@ -1,0 +1,30 @@
+.shop-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-banner {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-inner {
+    display: flex;
+    width: 100%;
+}
+
+.shop-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+}
+
+.shop-content {
+    width: 65%;
+}
