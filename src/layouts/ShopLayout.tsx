@@ -13,7 +13,13 @@ export const ShopLayout = ({ children, category } : ShopLayoutProps) => {
         </div>
         <div className="shop-inner">
             <div className="shop-bar">
-                
+                <div className="categorias">
+                    <h3>Entera</h3>
+                    <p>Armada</p>
+                    <p>Sin armar</p>
+                    <p>Strapless</p>
+                    <p>Mallas</p>
+                </div>
             </div>
             <div className="shop-content">
                 {children}

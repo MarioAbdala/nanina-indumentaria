@@ -16,7 +16,7 @@ export const Navbar = () => {
         </div>
         <nav>
             <NavLink to="/" className="logo-container"><h1 className="logo">NANINA</h1></NavLink>
-            <button className="navbar-toggle" onClick={toggleMenu}>
+            <button className={`navbar-toggle${isOpen ? ' active' : ''}`} onClick={toggleMenu}>
                 <span className="navbar-toggle-icon"></span>
             </button>
             <ul className={`navbar-menu ${isOpen ? 'active' : ''}`}>
