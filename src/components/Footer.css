@@ -7,6 +7,7 @@
     background-color: var(--background-pink);
     padding-inline: 15%;
     padding-block: 3rem;
+    color: var(--main-purple);
 }
 
 .footer-contact {
@@ -15,6 +16,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.location, .footer-icon-text-container>p {
+    color: #6e6e6e;
 }
 
 .footer-icon-text-container {
@@ -33,7 +38,7 @@
 }
 
 .footer-link {
-    color: black;
+    color: #6e6e6e;
     text-decoration: none;
 }
 
@@ -42,6 +47,21 @@
     height: 25px;
 }
 
-.footer-icon-text-container:hover, .footer-icon-dual-text-container:hover {
+.location:hover, .footer-icon-text-container:hover>p, .footer-link:hover {
     color: var(--main-purple);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 30%;
+        height: auto;
+    }
+
+    .footer-contact {
+        width: 100%;
+    }
 }
