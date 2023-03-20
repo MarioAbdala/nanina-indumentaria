@@ -35,3 +35,9 @@
 .section-link:hover .section {
     transform: scale(1.25);
 }
+
+@media only screen and (max-width: 780px) {
+    .section {
+        margin-bottom: 1rem;
+    }
+}

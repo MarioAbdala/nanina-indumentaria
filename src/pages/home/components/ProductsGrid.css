@@ -10,3 +10,9 @@
 .products-grid>.product {
     margin-bottom: 2.5rem;
 }
+
+@media only screen and (max-width: 780px) {
+    .products-grid {
+        justify-content: center;
+    }
+}

@@ -65,7 +65,7 @@ nav {
 }
 
 nav ul {
-    width: 40%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -84,18 +84,18 @@ nav ul li a {
 }
 
 .nav-icon-text-container {
-    width: 16.5%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-icon-text {
-    display: flex;
+    display: flex !important;
     align-items: center;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .nav-icon-text:hover {
@@ -104,4 +104,109 @@ nav ul li a {
 
 .nav-icon-text>span {
     margin-right: .25rem;
+}
+
+.navbar-toggle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+}
+  
+.navbar-toggle-icon {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+  
+.navbar-toggle-icon::before {
+    top: -8px;
+}
+  
+.navbar-toggle-icon::after {
+    bottom: -8px;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--background-pink);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    align-items: center;
+}
+  
+.navbar-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.navbar-menu li {
+    margin: 0;
+}
+  
+.navbar-menu a {
+    display: block;
+    padding: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+  
+.nav-active {
+    font-weight: bold;
+}
+  
+@media only screen and (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+  
+    .navbar-container {
+        display: flex;
+        align-items: center;
+    }
+  
+    .navbar-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        box-shadow: none;
+    }
+  
+    .navbar-menu li {
+        margin-left: 1rem;
+    }
 }

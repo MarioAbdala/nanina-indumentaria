@@ -1,7 +1,12 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 export const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
     return (
     <>
         <div className="pre-navbar">
@@ -11,7 +16,10 @@ export const Navbar = () => {
         </div>
         <nav>
             <NavLink to="/" className="logo-container"><h1 className="logo">NANINA</h1></NavLink>
-            <ul>
+            <button className="navbar-toggle" onClick={toggleMenu}>
+                <span className="navbar-toggle-icon"></span>
+            </button>
+            <ul className={`navbar-menu ${isOpen ? 'active' : ''}`}>
                 <li>
                     <NavLink to="/productos/mallas" className={({isActive}) => isActive ? 'nav-active' : ''}>Ofertas</NavLink>
                 </li>
@@ -24,11 +32,13 @@ export const Navbar = () => {
                 <li>
                     <NavLink to="/productos/medias" className={({isActive}) => isActive ? 'nav-active' : ''}>Conocenos</NavLink>
                 </li>
+                <li>
+                    <div className="nav-icon-text-container">
+                        <a href="#" className="nav-icon-text"><span className="material-icons">shopping_cart</span> Carrito</a>
+                        <NavLink to="/cliente" className="nav-icon-text"><span className="material-icons">account_circle</span> Mi cuenta</NavLink>
+                    </div>
+                </li>
             </ul>
-            <div className="nav-icon-text-container">
-                <a href="#" className="nav-icon-text"><span className="material-icons">shopping_cart</span> Carrito</a>
-                <NavLink to="/cliente" className="nav-icon-text"><span className="material-icons">account_circle</span> Mi cuenta</NavLink>
-            </div>
         </nav>
     </>
     )
