@@ -11,6 +11,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(https://www.besol.com.ar/assets/images/sliders/homepage/banner_13.png);
+    background-position: 50%;
+    color: #FFF;
+}
+
+.shop-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-inline: 15%;
+    height: 2.25rem;
+    background-color: var(--background-purple);
+}
+
+.shop-nav>p {
+    color: grey;
+}
+
+.shop-nav>p>a {
+    color: var(--main-purple);
+    text-decoration: none;
+}
+
+.shop-nav>p>a:hover {
+    color: var(--main-pink);
 }
 
 .shop-inner {

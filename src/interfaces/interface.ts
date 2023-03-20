@@ -37,6 +37,7 @@ export interface MainLayoutProps {
 
 export interface ShopLayoutProps {
     children: JSX.Element | JSX.Element[];
+    category: Category;
 };
 
 // Main components
