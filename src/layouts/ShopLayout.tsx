@@ -14,11 +14,12 @@ export const ShopLayout = ({ children, category } : ShopLayoutProps) => {
         <div className="shop-inner">
             <div className="shop-bar">
                 <div className="categorias">
-                    <h3>Entera</h3>
-                    <p>Armada</p>
-                    <p>Sin armar</p>
-                    <p>Strapless</p>
-                    <p>Mallas</p>
+                    <p className="categorias-titulo">Categorías</p>
+                    <p className="categoria">Categoría 1</p>
+                    <p className="categoria">Categoría 2</p>
+                    <p className="categoria">Categoría 3</p>
+                    <p className="categoria">Categoría 4</p>
+                    <p className="categoria">Categoría 5</p>
                 </div>
             </div>
             <div className="shop-content">

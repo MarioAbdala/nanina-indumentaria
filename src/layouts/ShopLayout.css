@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 30%;
+    width: 20%;
     padding: 2rem;
 }
 
@@ -58,8 +58,10 @@
     justify-content: space-between;
 }
 
-.categorias>h3 {
-    margin-bottom: 2rem;
+.categorias>.categorias-titulo {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 22px;
 }
 
 .categorias>p {
@@ -67,5 +69,17 @@
 }
 
 .shop-content {
-    width: 70%;
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-content>.products-grid {
+    width: 80%;
+}
+
+.shop-content>.products-grid>.product {
+    width: 30%;
 }
