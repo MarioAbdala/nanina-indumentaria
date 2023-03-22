@@ -30,6 +30,7 @@
 
 .section-link .section {
     transition: 0.5s all cubic-bezier(0.215, 0.610, 0.355, 1);
+    transform-origin: center center;
 }
 
 .section-link:hover .section {
